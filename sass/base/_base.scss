@@ -1,0 +1,18 @@
+body {
+  color: var(--text);
+  background-color: var(--background);
+  font-family: "roboto";
+  letter-spacing: 0.03em;
+  font-size: 14px;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+p {
+  color: var(--color-p);
+} 
+span {
+  color: var(--color-but);
+}

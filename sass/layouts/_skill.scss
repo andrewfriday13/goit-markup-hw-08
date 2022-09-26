@@ -1,0 +1,50 @@
+.skill{
+
+  &__list {
+    display: flex;
+    gap: 30px;
+  }
+  
+  & h2 {
+    left: 617px;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+  }
+  
+  &__item {
+    width: 270px;
+    display: inline-block;
+    gap: 10px;
+  }
+  
+  &__name {
+    line-height: 1.1;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  &__description {
+    line-height: 1.7;
+  }
+  
+  &-item {
+    display: flex;
+    gap: 30px;
+  }
+  
+  &__svg {
+    background-color: var(--bg-svg);
+  }
+  
+  &__icon {
+    display: flex;
+    background-color: var(--bg-svg);
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  
+  }
+}

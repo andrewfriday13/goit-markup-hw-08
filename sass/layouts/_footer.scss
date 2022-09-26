@@ -1,0 +1,129 @@
+.footer {
+  background-color: #2f303a;
+  color: var(--background);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  
+  & h2 {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+ &-link {
+  display: flex;
+  fill: var(--background);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  ;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
+}
+
+ul &-link:hover,
+ul &-link:focus {
+  fill: var(--background);
+  background-color: var(--color-but)
+}
+
+&-email {
+  display: inline-block;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+&-label {
+  cursor: pointer;
+  outline: transparent;
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  background-color: #2F303A;
+  color: var(--background);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  transition: border-color 250ms var(--timing-function);
+}
+
+&-label:focus {
+  border: 1px solid var(--color-but);
+}
+
+&-container {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+}
+
+footer{
+
+  & [href="./index.html"] {
+    display: block;
+    color: var(--background);
+    font-size: 26px;
+    line-height: 1 ;
+    font-family: "raleway";
+    margin-bottom: 20px;
+  }
+  
+  & [href="mailto:info@devstudio.com"],
+  [href="tel:+380961111111"] {
+    font-style: normal;
+    line-height: 1.7;
+    color: #ffffff99;
+    transition-timing-function: var(--timing-function);
+    transition-duration: 250ms;
+    transition-property: color;
+  }
+  
+  & [href="https://goo.gl/maps/d5CcS2hFM6yTFQRFA"] {
+    font-style: normal;
+    line-height: 1.7;
+    color: var(--background);
+  }
+}
+
+
+.social-footer {
+  display: flex;
+  gap: 10px;
+}
+
+
+.socaial-footer {
+  display: flex;
+  gap: 70px;
+}
+
+
+
+.add-email {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.link-address {
+  display: flex;
+}
+
+.list-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}

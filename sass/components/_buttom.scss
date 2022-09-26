@@ -1,0 +1,95 @@
+.btn{
+
+  &-cap {
+    color: var(--background);
+    font-size: 16px;
+    width: 216px;
+    height: 50px;
+    background-color: var(--color-but);
+    border-radius: 4px;
+    border: 0;
+    letter-spacing: 0.06em;
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
+  }
+  
+  &-cap:active {
+    background-color: var(--active-but);
+  }
+
+
+  
+  
+  
+  &-close {
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-function);
+    transition-property: fill;
+  }
+  
+  &-close:hover,
+  &-close:focus {
+    fill: var(--color-but);
+  }
+}
+.modal-btn {
+  color: var(--background);
+  font-size: 16px;
+  width: 216px;
+  height: 50px;
+  background-color: var(--color-but);
+  border-radius: 4px;
+  border: 0;
+  letter-spacing: 0.06em;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.list-btn {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 50px;
+  
+   & [type="button"] {
+    height: 38px;
+    background-color: #f5f4fa;
+    border-radius: 4px;
+    border: 0;
+    font-size: 16px;
+    padding: 6px 22px;
+    cursor: pointer;
+    transition-property: color, background-color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-function);
+  }
+  
+   & [type="button"]:hover,
+   & [type="button"]:focus {
+    background-color: var(--active-but);
+    color: var(--background);
+    box-shadow: 0px 3px 1px #0000001a, 0px 1px 2px #00000014, 0px 2px 2px #0000001f;
+  }
+}
+
+
+.tg-btn {
+  color: var(--background);
+  font-size: 16px;
+  width: 216px;
+  height: 50px;
+  background-color: var(--color-but);
+  border-radius: 4px;
+  border: 0;
+  letter-spacing: 0.06em;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  gap: 10px;
+}
