@@ -40,6 +40,10 @@ header{
 
 .nav {
   margin-right: auto;
+
+  @media screen and(min-width:768px){
+    
+  }
   
   &.active {
     color: var(--color-but);
@@ -70,19 +74,22 @@ ul{
   font-size: 26px;
   line-height: 1.2;
   font-family: "raleway";
-  margin-right: 93px;
+
+  @media screen and (min-width:768px){
+      margin-right: 88px;
+  }
 }
 
 .list-address {
   display: flex;
   align-items: center;
-  gap: 50px;
+  gap: 10px;
+  flex-wrap: wrap;
   
   & a{
     color: var(--color-p);
     letter-spacing: 0.02em;
-    padding-top: 28px;
-    padding-bottom: 28px;
+    
     font-weight: 500;
   }
 }
