@@ -3,7 +3,7 @@
   &-cap {
     color: var(--background);
     font-size: 16px;
-    width: 216px;
+    width: 200px;
     height: 50px;
     background-color: var(--color-but);
     border-radius: 4px;
@@ -12,6 +12,10 @@
     margin: 0 auto;
     display: block;
     cursor: pointer;
+
+    @media screen and(min-width:1200px){
+      width: 216px;
+    }
   }
   
   &-cap:active {
