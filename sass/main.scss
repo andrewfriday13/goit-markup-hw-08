@@ -1,21 +1,22 @@
-@import './utils/vars';
-@import'./utils/visually-hedden';
+@import "./utils/vars";
+@import "./utils/visually-hedden";
 
-@import'./base/base';
-@import'./base/reset';
-@import'./base/container';
+@import "./base/base";
+@import "./base/reset";
+@import "./base/container";
 
-@import'./components/buttom';
-@import'./components/svg';
-@import'./components/text';
-@import'./components/border';
+@import "./components/buttom";
+@import "./components/svg";
+@import "./components/_mobile-menu";
+@import "./components/text";
+@import "./components/border";
 
-@import'./layouts/footer';
-@import'./layouts/header';
-@import'./layouts/hero';
-@import'./layouts/skill';
-@import'./layouts/work';
-@import'./layouts/team';
-@import'./layouts/clients';
-@import'./layouts/products';
-@import'./layouts/modal_window';
+@import "./layouts/footer";
+@import "./layouts/header";
+@import "./layouts/hero";
+@import "./layouts/skill";
+@import "./layouts/work";
+@import "./layouts/team";
+@import "./layouts/clients";
+@import "./layouts/products";
+@import "./layouts/modal_window";
