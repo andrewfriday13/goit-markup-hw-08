@@ -1,11 +1,15 @@
 .work {
   padding-top: 0;
-  
+  display: none;
+
+  @media screen and(min-width:1200px) {
+  }
+
   &__list {
     display: flex;
     gap: 30px;
   }
-  
+
   &__title {
     font-size: 36px;
     line-height: 1.2;
@@ -13,19 +17,18 @@
     color: var(--text);
     margin-bottom: 50px;
   }
-  
+
   &__section {
     width: 1200px;
     margin: 0 auto;
     padding: 0 15px 0 15px;
   }
-  
+
   &__item {
     justify-content: center;
     position: relative;
-  
   }
-  
+
   &__name {
     display: flex;
     align-items: center;
@@ -39,7 +42,7 @@
     height: 70px;
     text-transform: uppercase;
   }
-  
+
   &__img {
     display: block;
     max-width: 100%;

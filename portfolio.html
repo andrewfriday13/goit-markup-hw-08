@@ -20,34 +20,46 @@
     <header>
       <div class="container header-container">
         <a class="link" href="/"><span>Web</span>Studio</a>
-        <div class="hidden-nav">
-          <div class="hidden">
-          <nav class="nav">
-            <ul class="main-list">
-              <li class="list-item"><a class="header-nav-link" href="./index.html">Студія</a></li>
-              <li class="list-item">
-                <a class="header-nav-link nav active" href="./portfolio.html">Портфоліо</a>
-              </li>
-              <li class="list-item"><a class="header-nav-link" href="">Контакти</a></li>
-            </ul>
-          </nav>
-          <ul class="list-address">
+
+        <nav class="nav hidden-nav">
+          <ul class="main-list">
             <li class="list-item">
-              <a class="icon-contacts" href="mailto:info@devstudio.com">
-                <svg class="icon-tap" width="16" height="12" href="mailto:info@devstudio.com">
-                  <use href="./images/icons.svg#envelope"></use>
-                </svg>info@devstudio.com
-              </a>
+              <a class="header-nav-link" href="./index.html">Студія</a>
             </li>
             <li class="list-item">
-              <a class="icon-contacts" href="tel:+380961111111">
-                <svg class="icon-tap" width="10" height="16" href="mailto:info@devstudio.com">
-                  <use href="./images/icons.svg#smartphone"></use>
-                </svg>
-                +38 096 111 11 11</a>
-              
+              <a class="header-nav-link nav active" href="./portfolio.html">Портфоліо</a>
             </li>
+            <li class="list-item"><a class="header-nav-link" href="">Контакти</a></li>
           </ul>
+        </nav>
+        <ul class="list-address hidden-nav">
+          <li class="list-item">
+            <a class="icon-contacts" href="mailto:info@devstudio.com">
+              <svg class="icon-tap" width="16" height="12">
+                <use href="./images/icons.svg#envelope"></use></svg
+              >info@devstudio.com
+            </a>
+          </li>
+          <li class="list-item">
+            <a class="icon-contacts" href="tel:+380961111111">
+              <svg class="icon-tap" width="10" height="16">
+                <use href="./images/icons.svg#smartphone"></use></svg
+              >+38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+
+        <div class="hidden-burg">
+          <button
+            class="menu-btn js-open-menu"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg width="40" height="40">
+              <use href="./images/icons.svg#menu-open"></use>
+            </svg>
+          </button>
         </div>
       </div>
     </header>
@@ -68,10 +80,8 @@
             <a class="list-products" href="" link="">
               <div class="team-thumb">
                 <img
-                  src="./images/work/img-0.jpg"
+                  srcset="./images/work/img_sm-@1x.jpg 1x, ./images/work/img_sm-@2x.jpg 2x"
                   alt="зображення команди"
-                  width="370"
-                  height="294"
                 />
                 <div class="overlay">
                   <p class="overlay__desc">
@@ -91,10 +101,8 @@
             <a class="list-products" href="" link="">
               <div class="team-thumb">
                 <img
-                  src="./images/work/img-1.jpg"
+                  srcset="./images/work/img_sm-@1x-1.jpg 1x, ./images/work/img_sm-@2x-1.jpg 2x"
                   alt="зображення команди"
-                  width="370"
-                  height="294"
                 />
                 <div class="overlay">
                   <p class="overlay__desc">
@@ -114,10 +122,8 @@
             <a class="list-products" href="" link="">
               <div class="team-thumb">
                 <img
-                  src="./images/work/img-2.jpg"
+                  srcset="./images/work/img_sm-@1x-2.jpg 1x, ./images/work/img_sm-@2x-2.jpg 2x"
                   alt="зображення команди"
-                  width="370"
-                  height="294"
                 />
                 <div class="overlay">
                   <p class="overlay__desc">
@@ -137,10 +143,8 @@
             <a class="list-products" href="" link="">
               <div class="team-thumb">
                 <img
-                  src="./images/work/img-3.jpg"
+                  srcset="./images/work/img_sm-@1x-3.jpg 1x, ./images/work/img_sm-@2x-3.jpg 2x"
                   alt="зображення команди"
-                  width="370"
-                  height="294"
                 />
                 <div class="overlay">
                   <p class="overlay__desc">
@@ -160,10 +164,8 @@
             <a class="list-products" href="" link="">
               <div class="team-thumb">
                 <img
-                  src="./images/work/img-4.jpg"
+                  srcset="./images/work/img_sm-@1x-4.jpg 1x, ./images/work/img_sm-@2x-4.jpg 2x"
                   alt="зображення команди"
-                  width="370"
-                  height="294"
                 />
                 <div class="overlay">
                   <p class="overlay__desc">
@@ -183,10 +185,8 @@
             <a class="list-products" href="" link="">
               <div class="team-thumb">
                 <img
-                  src="./images/work/img-5.jpg"
+                  srcset="./images/work/img_sm-@1x-5.jpg 1x, ./images/work/img_sm-@2x-5.jpg 2x"
                   alt="зображення команди"
-                  width="370"
-                  height="294"
                 />
                 <div class="overlay">
                   <p class="overlay__desc">
@@ -206,10 +206,8 @@
             <a class="list-products" href="" link="">
               <div class="team-thumb">
                 <img
-                  src="./images/work/img-6.jpg"
+                  srcset="./images/work/img_sm-@1x-6.jpg 1x, ./images/work/img_sm-@2x-6.jpg 2x"
                   alt="зображення команди"
-                  width="370"
-                  height="294"
                 />
                 <div class="overlay">
                   <p class="overlay__desc">
@@ -229,10 +227,8 @@
             <a class="list-products" href="" link="">
               <div class="team-thumb">
                 <img
-                  src="./images/work/img-7.jpg"
+                  srcset="./images/work/img_sm-@1x-7.jpg 1x, ./images/work/img_sm-@2x-7.jpg 2x"
                   alt="зображення команди"
-                  width="370"
-                  height="294"
                 />
                 <div class="overlay">
                   <p class="overlay__desc">
@@ -252,10 +248,8 @@
             <a class="list-products" href="" link="">
               <div class="team-thumb">
                 <img
-                  src="./images/work/img-8.jpg"
+                  srcset="./images/work/img_sm-@1x-8.jpg 1x, ./images/work/img_sm-@2x-8.jpg 2x"
                   alt="зображення команди"
-                  width="370"
-                  height="294"
                 />
                 <div class="overlay">
                   <p class="overlay__desc">
