@@ -3,9 +3,16 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  justify-content: center;
 
   @media screen and(min-width:768px) {
     justify-content: flex-start;
+  }
+
+  @media screen and(min-width:1200px) {
+    max-width: 1200px;
+    justify-content: center;
+    margin: 0 auto;
   }
 
   & h2 {
@@ -19,7 +26,8 @@
 
   & .list-products:hover,
   & .list-products:focus {
-    box-shadow: 0px 1px 1px #0000001f, 0px 4px 4px #0000000f, 1px 4px 6px #00000029;
+    box-shadow: 0px 1px 1px #0000001f, 0px 4px 4px #0000000f,
+      1px 4px 6px #00000029;
   }
 
   & li {
@@ -46,7 +54,8 @@
   }
 
   .section &:hover {
-    box-shadow: 0px 1px 1px #0000001f, 0px 4px 4px #0000000f, 1px 4px 6px #00000029;
+    box-shadow: 0px 1px 1px #0000001f, 0px 4px 4px #0000000f,
+      1px 4px 6px #00000029;
   }
 }
 
