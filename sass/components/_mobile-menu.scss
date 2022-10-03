@@ -49,7 +49,65 @@
 
 .mobile-menu-nav {
   margin-bottom: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+
+  & a {
+    font-size: 40px;
+    line-height: calc(46 / 40);
+    font-weight: 500;
+    color: var(--text);
+  }
 }
+
+.mobile-menu-con {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  margin-bottom: 64px;
+
+  .menu__tel {
+    font-size: 34px;
+    color: var(--color-but);
+    line-height: calc(40 / 34);
+  }
+
+  .menu__email {
+    font-size: 24px;
+    line-height: calc(28 / 24);
+    color: var(--color-p);
+  }
+}
+
+.mobile-menu-soc {
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: 500;
+
+  & a {
+    font-size: 18px;
+    line-height: calc(22 / 18);
+    color: var(--color-but);
+  }
+
+  & li {
+    padding: 0 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+      border: none;
+    }
+  }
+}
+
 .menu-toggle {
   padding: 0;
 
@@ -60,4 +118,9 @@
 .close-menu {
   background-color: transparent;
   border: none;
+
+  & .close-menu__btn:hover,
+  & .close-menu__btn:focus {
+    fill: var(--color-but);
+  }
 }

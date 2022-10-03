@@ -3,12 +3,11 @@
   --background: #ffffff;
   --color-p: #757575;
   --color-but: #2196f3;
-  --color-but: #2196f3;
   --active-but: #188ce8;
   --icon-color: #afb1b8;
-  --bg-svg: #F5F4FA;
+  --bg-svg: #f5f4fa;
   --bg-color-90: rgba(33, 150, 243, 90%);
-  --bg-backdrop: #0000001A;
+  --bg-backdrop: #0000001a;
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   --input-border: #21212133;
   --color-textarea: rgba(117, 117, 117, 0.5);
@@ -368,6 +367,69 @@ ul .clients-link:hover .clients-icon, ul .clients-link:focus .clients-icon {
 
 .mobile-menu-nav {
   margin-bottom: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 35px;
+}
+.mobile-menu-nav a {
+  font-size: 40px;
+  line-height: 1.15;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.mobile-menu-con {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 32px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  margin-bottom: 64px;
+}
+.mobile-menu-con .menu__tel {
+  font-size: 34px;
+  color: var(--color-but);
+  line-height: 1.1764705882;
+}
+.mobile-menu-con .menu__email {
+  font-size: 24px;
+  line-height: 1.1666666667;
+  color: var(--color-p);
+}
+
+.mobile-menu-soc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-weight: 500;
+}
+.mobile-menu-soc a {
+  font-size: 18px;
+  line-height: 1.2222222222;
+  color: var(--color-but);
+}
+.mobile-menu-soc li {
+  padding: 0 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+.mobile-menu-soc li:first-child {
+  padding-left: 0;
+}
+.mobile-menu-soc li:last-child {
+  padding-right: 0;
+  border: none;
 }
 
 .menu-toggle {
@@ -380,6 +442,9 @@ ul .clients-link:hover .clients-icon, ul .clients-link:focus .clients-icon {
 .close-menu {
   background-color: transparent;
   border: none;
+}
+.close-menu .close-menu__btn:hover, .close-menu .close-menu__btn:focus {
+  fill: var(--color-but);
 }
 
 .border {
@@ -793,8 +858,8 @@ ul [href="mailto:info@devstudio.com"]:hover, ul [href="mailto:info@devstudio.com
 .hero {
   background-color: #2f303a;
   padding: 200px 0;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/_sm-@1x.webp);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(../../images/_sm-@1x.webp);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/_sm-@1x.webp);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(../images/hero/_sm-@1x.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -803,32 +868,32 @@ ul [href="mailto:info@devstudio.com"]:hover, ul [href="mailto:info@devstudio.com
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/_sm-@2x.webp);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(../../images/_sm-@2x.webp);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))) url(../images/hero/_sm-@2x.webp);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%) url(../images/hero/_sm-@2x.webp);
   }
 }
 @media screen and (min-width: 481px) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/_md-@1x.webp);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(../../images/_md-@1x.webp);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/_md-@1x.webp);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(../images/hero/_md-@1x.webp);
   }
 }
 @media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/_md-@2x.webp);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(../../images/_md-@2x.webp);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/_md-@2x.webp);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(../images/hero/_md-@2x.webp);
   }
 }
 @media screen and (min-width: 769px) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/_lg-@1x.webp);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(../../images/_lg-@1x.webp);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/hero/_lg-@2x.webp);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(../../images/hero/_lg-@2x.webp);
   }
 }
 @media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/_lg-@2x.webp);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(../../images/_lg-@2x.webp);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/_lg-@2x.webp);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(../images/hero/_lg-@2x.webp);
   }
 }
 .hero-cap {
@@ -1358,7 +1423,7 @@ li:hover .overlay {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 450px;
+  width: 100%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   -webkit-transition-property: opacity, visibility;
@@ -1367,6 +1432,11 @@ li:hover .overlay {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal {
