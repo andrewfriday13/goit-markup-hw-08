@@ -110,10 +110,14 @@ textarea {
 
   &-licence {
     color: var(--color-p);
-    line-height: calc(24 / 14);
+    line-height: calc(14 / 12);
     font-weight: 400;
     user-select: none;
     font-size: 12px;
+    @media screen and(min-width:1200px) {
+      font-size: 14px;
+      line-height: calc(24 / 14);
+    }
   }
 
   &-licence a {
