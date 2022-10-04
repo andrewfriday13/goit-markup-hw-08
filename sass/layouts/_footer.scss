@@ -73,6 +73,9 @@
     @media screen and(min-width:480px) {
       width: 450px;
     }
+    @media screen and(min-width:1200px) {
+      width: 354px;
+    }
   }
 
   &-label:focus {
@@ -92,13 +95,13 @@
       justify-content: space-around;
       flex-direction: row;
       align-items: baseline;
-      width: 738px;
+      max-width: 738px;
       margin: 0 auto;
     }
     @media screen and(min-width:1200px) {
       display: flex;
       align-items: baseline;
-      width: 1200px;
+      max-width: 1200px;
       justify-content: space-between;
     }
   }
