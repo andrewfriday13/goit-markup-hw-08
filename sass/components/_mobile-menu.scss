@@ -54,10 +54,14 @@
   gap: 35px;
 
   & a {
-    font-size: 40px;
+    font-size: 36px;
     line-height: calc(46 / 40);
     font-weight: 500;
     color: var(--text);
+
+    @media screen and(min-width:480px) {
+      font-size: 40px;
+    }
   }
 }
 
@@ -70,15 +74,23 @@
   margin-bottom: 64px;
 
   .menu__tel {
-    font-size: 34px;
+    font-size: 28px;
     color: var(--color-but);
     line-height: calc(40 / 34);
+
+    @media screen and(min-width:480px) {
+      font-size: 34px;
+    }
   }
 
   .menu__email {
-    font-size: 24px;
+    font-size: 18px;
     line-height: calc(28 / 24);
     color: var(--color-p);
+
+    @media screen and(min-width:480px) {
+      font-size: 24px;
+    }
   }
 }
 
@@ -86,24 +98,45 @@
   display: flex;
   flex-wrap: wrap;
   font-weight: 500;
+  gap: 25px;
+  justify-content: space-between;
+
+  @media screen and(min-width:480px) {
+    gap: 0;
+    justify-content: flex-start;
+  }
 
   & a {
     font-size: 18px;
     line-height: calc(22 / 18);
     color: var(--color-but);
+    padding-right: 10px;
+
+    @media screen and(min-width:480px) {
+      padding-right: 0;
+    }
+  }
+
+  & [href="https://www.facebook.com/"]
+  {
+    padding-right: 13px;
   }
 
   & li {
-    padding: 0 10px;
     border-right: 1px solid rgba(33, 33, 33, 0.2);
 
-    &:first-child {
-      padding-left: 0;
-    }
+    @media screen and(min-width:480px) {
+      padding: 0 10px;
+      border-right: 1px solid rgba(33, 33, 33, 0.2);
 
-    &:last-child {
-      padding-right: 0;
-      border: none;
+      &:first-child {
+        padding-left: 0;
+      }
+
+      &:last-child {
+        padding-right: 0;
+        border: none;
+      }
     }
   }
 }
